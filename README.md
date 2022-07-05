@@ -18,7 +18,24 @@ $ pip3 install lifehash
 
 ## Use
 
-See the unit tests for an example of usage.
+```python
+from lifehash.lifehash import LifeHash, LifeHashVersion
+image = LifeHash.make_from(b"hello world", version=LifeHashVersion.version2, module_size=1, has_alpha=True)
+```
+
+## Testing
+
+```bash
+$ python3 -m unittest lifehash/lifehash.py
+```
+
+## Building
+
+```bash
+$ python3 -m build
+```
+
+For releases: `git tag` and push, then `twine upload dist/*`
 
 ## License
 
