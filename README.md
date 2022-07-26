@@ -1,35 +1,49 @@
 # bc-lifehash-python - The python implementation
 
+* <img src="images/crypto-commons-super-simple.png" width=16 valign="bottom">&nbsp;&nbsp; ***part of the [crypto commons](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md) technology family***
+
+### _by [Bryan Bishop](https://github.com/kanzure) & [Cramium Solutions](https://cramiumsolutions.com/)_
+
 LifeHash is a method of hash visualization. This is a python implementation of [bc-lifehash](https://github.com/BlockchainCommons/bc-lifehash), see there for an overview of LifeHash.
 
 ## Notes on This Implementation
 
 This python library should probably be replaced with bindings to the C implementation, which is the "canonical" reference implementation.
 
-## Dependencies
+## Implementations
 
-This LifeHash library is self-contained and has no dependencies.
+| Type | Name | Language | Note |
+|------|------|----------|------|
+| Reference | [bc-lifehash](https://github.com/BlockchainCommons/bc-lifehash) | C++/C
+| Third-Party | [bc-lifehash-python](https://github.com/BlockchainCommons/bc-lifehash-python) | Python | [Cramium](https://cramiumsolutions.com/)
+| Reference | [LifeHash](https://github.com/BlockchainCommons/LifeHash) | Swift
+| Reference | [LifeHash](https://github.com/BlockchainCommons/LifeHash) | Mathematica/Wolfram Language | `version1` only
 
-## Installation
+## Command-Line Tools
+
+[bc-lifehash-cli](https://github.com/BlockchainCommons/bc-lifehash-cli) is a command line tool written in C++ that generates LifeHash images as PNG files.
+
+
+## Installation Instructions
 
 ```bash
 $ pip3 install lifehash
 ```
 
-## Use
+## Usage Instructions
 
 ```python
 from lifehash.lifehash import LifeHash, LifeHashVersion
 image = LifeHash.make_from(b"hello world", version=LifeHashVersion.version2, module_size=1, has_alpha=True)
 ```
 
-## Testing
+### Testing
 
 ```bash
 $ python3 -m unittest lifehash/lifehash.py
 ```
 
-## Building
+### Building
 
 ```bash
 $ python3 -m build
@@ -37,17 +51,33 @@ $ python3 -m build
 
 For releases: `git tag` and push, then `twine upload dist/*`
 
-## License
+### Version History
 
-LifeHash is released under the BSD-2-Clause license from [Cramium Solutions](https://cramiumsolutions.com). See [LICENSE.md](LICENSE.md) for more info.
+#### 1.00 (July 5, 2022)
+
+First version of `bc-lifehash-python` contributed to Blockchain COmmons.
+
+## Origin, Authors, Copyright & Licenses
+
+LifeHash is released under the BSD-2-Clause license from [Cramium, a division of CrossBar, Inc.](https://cramiumsolutions.com). See [LICENSE](LICENSE) for more info.
+
+## Dependencies
+
+This LifeHash library is self-contained and has no dependencies.
 
 ## Financial Support
-
-The python implementation of LifeHash is built and sponsored by [Cramium Solutions](https://cramiumsolutions.com/).
 
 LifeHash is also a project of [Blockchain Commons](https://www.blockchaincommons.com/). We are proudly a "not-for-profit" social benefit corporation committed to open source & open development. Our work is funded entirely by donations and collaborative partnerships with people like you. Every contribution will be spent on building open tools, technologies, and techniques that sustain and advance blockchain and internet security infrastructure and promote an open web.
 
 To financially support further development of LifeHash and other projects, please consider becoming a Patron of Blockchain Commons through ongoing monthly patronage as a [GitHub Sponsor](https://github.com/sponsors/BlockchainCommons). You can also support Blockchain Commons with bitcoins at our [BTCPay Server](https://btcpay.blockchaincommons.com/).
+
+### Project Sponsors
+
+The python implementation of LifeHash is built and sponsored by [Cramium Solutions](https://cramiumsolutions.com/).
+
+![](/images/logo-cramium.jpg)
+
+Cramium is a division of CrossBar, Inc.
 
 ## Contributing
 
