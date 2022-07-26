@@ -1,6 +1,6 @@
 # bc-lifehash-python - The python implementation
 
-* <img src="images/logos/crypto-commons-super-simple.png" width=16 valign="bottom">&nbsp;&nbsp; ***part of the [crypto commons](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md) technology family***
+* <img src="images/crypto-commons-super-simple.png" width=16 valign="bottom">&nbsp;&nbsp; ***part of the [crypto commons](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md) technology family***
 
 ### _by [Bryan Bishop](https://github.com/kanzure) & [Cramium Solutions](https://cramiumsolutions.com/)_
 
