@@ -59,7 +59,7 @@ First version of `bc-lifehash-python` contributed to Blockchain COmmons.
 
 ## Origin, Authors, Copyright & Licenses
 
-LifeHash is released under the BSD-2-Clause license from [Cramium Solutions](https://cramiumsolutions.com). See [LICENSE.md](LICENSE.md) for more info.
+LifeHash is released under the BSD-2-Clause license from [Cramium, a division of CrossBar, Inc.](https://cramiumsolutions.com). See [LICENSE.md](LICENSE.md) for more info.
 
 ## Dependencies
 
@@ -74,6 +74,10 @@ To financially support further development of LifeHash and other projects, pleas
 ### Project Sponsors
 
 The python implementation of LifeHash is built and sponsored by [Cramium Solutions](https://cramiumsolutions.com/).
+
+![](/images/logo-cramium.jpg)
+
+Cramium is a division of CrossBar, Inc.
 
 ## Contributing
 
