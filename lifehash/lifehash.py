@@ -236,7 +236,7 @@ class Color:
         return self.lerp_to(Colors.black, t)
 
     def luminance(self):
-        return math.sqrt(math.pow(0.299 * self.r, 2) + math.pow(0.587 * self.g, 2) + math.pow(0.144 * self.b, 2))
+        return math.sqrt(math.pow(0.299 * self.r, 2) + math.pow(0.587 * self.g, 2) + math.pow(0.114 * self.b, 2))
 
     def burn(self, t):
         f = max(1.0 - t, 1.0e-7)
